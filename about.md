@@ -4,7 +4,7 @@ image: /assets/img/blog/self.jpg
 
 # About
 
-I am an undergraduate student in Beijing Normal University. I will be a Master student in Tsinghua University in September, 2019.
+I am an undergraduate student in Beijing Normal University. I will be a Master student in Tsinghua University in September, 2019, advised by professor [Jie Tang](http://keg.cs.tsinghua.edu.cn/jietang/).
 
 ## Experiences
 
@@ -15,6 +15,7 @@ I am an undergraduate student in Beijing Normal University. I will be a Master s
 
 ## Honors and Awards
 
+* Excellent Bachelor Degree Research Award (Title: Research on Heterogeneous Information Network Alignment Oriented Neural Network Models) **May 2019**
 * Excellent Graduate Award (bachelor degree in [BNU cist](http://cisten.bnu.edu.cn/)) **May 2019**
 * National Scholarship **Oct. 2018**
 * National Scholarship **Oct. 2017**
