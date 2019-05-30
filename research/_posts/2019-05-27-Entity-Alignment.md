@@ -16,17 +16,19 @@ In recent years, **embedding-based methods** attract more and more attention. Gi
 Similar to EA, cross-lingual word alignment is also an important area in NLP. Before embedding-based methods proposed, they developed seperately. However, after embedding-based model becomes a rising star, their development tracks show a lot of similarity.
 
 ![](/assets/img/blog/EA/en-sp.png)
-English-Spanish word embeddings alignment by linear transformation [1]
+<div align="center">Figure 1: English-Spanish word embeddings alignment by linear transformation [1]</div>
 
 When **embedding-based EA** methods firstly proposed, they usually follow two threads.
 
 The first track is to merge the pre-aligned entities first, then use single network embedding models to get embeddings of entities. The representative works are JE (CCKS 2016) [2] in KG domain, and IONE (IJCAI 2016) [3] in SN domain.
 
 ![](/assets/img/blog/EA/1.png)
+<div align="center">Figure 2: JE (figure by [19])</div>
 
 The second track is to train two single networks seperately, then use the pre-aligned entities to get a mapping function between two vector spaces. The representative works are MTransE (IJCAI 2017) [4] in KG domain, and PALE (IJCAI 2016) [5] in SN domain.
 
 ![](/assets/img/blog/EA/2.png)
+<div align="center">Figure3: MTransE (figure by [19])</div>
 
 **After that**, there are two directions to tune alignment precision.
 
@@ -63,3 +65,4 @@ The second track is to train two single networks seperately, then use the pre-al
 16. Zhang S, Tong H, Maciejewski R, et al. Multilevel Network Alignment[C]//The World Wide Web Conference. ACM, 2019: 2344-2354.
 17. Pei S, Yu L, Hoehndorf R, et al. Semi-Supervised Entity Alignment via Knowledge Graph Embedding with Awareness of Degree Difference[C]//The World Wide Web Conference. ACM, 2019: 3130-3136.
 18. https://www.aminer.cn/oag2019
+19. https://github.com/zhichun
