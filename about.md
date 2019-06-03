@@ -18,7 +18,6 @@ I am an undergraduate student in Beijing Normal University. I will be a Master s
 
 ## Honors and Awards
 
-* Excellent Bachelor Degree Research Award **May 2019**
 * Beijing Excellent Graduate Award (bachelor degree in [BNU cist](http://cisten.bnu.edu.cn/)) **May 2019**
 * National Scholarship **Oct. 2018**
 * National Scholarship **Oct. 2017**

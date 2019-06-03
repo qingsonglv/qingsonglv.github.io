@@ -35,13 +35,13 @@ The second track is to train two single networks seperately, then use the pre-al
 * **Iterative alignment**. Intuitively, newly aligned entities can furthor promote more aligned entities. Therefore, this is naturally iterative procedure. IPTransE (IJCAI 2017) [6] is the first research to propose this idea. However, error propogation is a problem of iterative alignment. BootEA (IJCAI 2018) [7] alleviate this problem by a seed editing method, which means newly aligned entities can also be edited or removed.
 * **Attribute information**. Sometimes, only using structure information of network is not promising in EA, so combination with attribute information is also an important area. The representative works are JAPE (ISWC 2017) [8], KDCoE (IJCAI 2018) [9] and GCN-Align (EMNLP 2018) [10] in KG domain, and REGAL (CIKM 2018) [11] and MEgo2Vec (CIKM 2018) [12] in SN domain.
 
-**More recently**, alignment methods went through explosive grouth in 2019. five fancy new directions are proposed:
+**More recently**, alignment methods went through explosive grouth in 2019. Five fancy new directions are proposed:
 
 * Firstly, **unsupervised alignment**. The prerequisite of pre-aligned entities is hard to satisfy in real world scenario, so researchers are exploring how to get alignment seeds from scratch. Two representative works are as follows:
     * Entity Alignment between Knowledge Graphs Using Attribute Embeddings (AAAI 2019) [13]
     * Weakly-supervised Knowledge Graph Alignment with Adversarial Learning (ICLR 2019, though rejected, it worths learning) [14]
 * Secondly, **multi-network alignment**. Most settings of alignment task is network-pair alignment. However, when aligning multiple networks, pairwise alignment is time-consuming and lack of interaction between multiple networks. Representative work is CrossMNA (WWW 2019) [15]. Interestingly, they emphasize not using attribute information in this paper.
-* Thirdly, **multi-view alignment**. Due to the complexity of alignment problem, embedding with one model (or view) is not enough to obtain promising result. MOANA (WWW 2019) [16] proposes a multi-level embedding model to embed information from multi-view. Moreover, they reduce the time complexity of seed excavation to linear.
+* Thirdly, **multi-view alignment**. Due to the complexity of alignment problem, embedding with one model (or view) is not enough to obtain promising result. MOANA (WWW 2019) [16] proposes a multi-level embedding model to embed information from multi-view. Moreover, they reduce the time complexity of seed excavation to linear. ACL 2019 also has a publication [20] aiming at aligning entities from the perspective of attribute, local strucutre and global structure.
 * The fourth one is a very hard-core direction, **modify embedding model to improve alignment**, which means the improvement is on a low level. SEA (WWW 2019) [17] is such a work. They point out that the existing embedding models usually make nodes with similar degree close, which is not good for alignment. And they propose an adversarial method to tackle with this problem.
 * Last, **web-scale alignment**. Most existing works test models on datasets with only millions of entities. However, when aligning billions of nodes, brand new problems come up from time complexity or precision control. Representative work is OAG (KDD 2019) [18].
 
@@ -66,3 +66,4 @@ The second track is to train two single networks seperately, then use the pre-al
 17. Pei S, Yu L, Hoehndorf R, et al. Semi-Supervised Entity Alignment via Knowledge Graph Embedding with Awareness of Degree Difference[C]//The World Wide Web Conference. ACM, 2019: 3130-3136.
 18. https://www.aminer.cn/oag2019
 19. https://github.com/zhichun
+20. Xu K, Wang L, Yu M, et al. Cross-lingual Knowledge Graph Alignment via Graph Matching Neural Network[J]. arXiv preprint arXiv:1905.11605, 2019.
