@@ -21,7 +21,7 @@ I am an undergraduate student in Beijing Normal University. I will be a Master s
 
 ## Honors and Awards
 
-* BNU Excellent Graduate Research [[code & paper]](https://github.com/1049451037/HIN-Align)
+* BNU Excellent Graduate Research [[code & paper]](https://github.com/1049451037/HIN-Align) **Jun. 2019**
 * Beijing Excellent Graduate (bachelor degree in [BNU cist](http://cisten.bnu.edu.cn/)) **May 2019**
 * National Scholarship **Oct. 2018**
 * National Scholarship **Oct. 2017**
