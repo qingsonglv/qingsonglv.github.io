@@ -40,7 +40,7 @@ The second track is to train two single networks seperately, then use the pre-al
 * Firstly, **unsupervised alignment**. The prerequisite of pre-aligned entities is hard to satisfy in real world scenario, so researchers are exploring how to get alignment seeds from scratch. Two representative works are as follows:
     * Entity Alignment between Knowledge Graphs Using Attribute Embeddings (AAAI 2019) [13]
     * Deep Adversarial Network Alignment (arxiv 2019) [14]
-* Secondly, **multi-view alignment**. Due to the complexity of alignment problem, embedding with one model (or view) is not enough to obtain promising result. MOANA (WWW 2019) [15] proposes a multi-level embedding model to embed information from multi-view. Moreover, they reduce the time complexity of seed excavation to linear. ACL 2019 also has a publication [19] aiming at aligning entities from the perspective of attribute, local strucutre and global structure.
+* Secondly, **multi-view alignment**. Due to the complexity of alignment problem, embedding with one model (or view) is not enough to obtain promising result. MOANA (WWW 2019) [15] proposes a multi-level embedding model to embed information from multi-view. Moreover, they reduce the time complexity of seed excavation to linear. ACL 2019 also has a publication [19] aiming at aligning entities from the perspective of attribute, local strucutre and global structure. MultiKE (IJCAI 2019) [20] tried more views and more combination methods, and got higher hits score.
 * The third one is a very hard-core direction, **modify embedding model to improve alignment**, which means the improvement is on a low level. SEA (WWW 2019) [16] is such a work. They point out that the existing embedding models usually make nodes with similar degree close, which is not good for alignment. And they propose an adversarial method to mitigate this drawback.
 * Last, **web-scale alignment**. Most existing works test models on datasets with only millions of entities. However, when aligning billions of nodes, brand new problems come up from time complexity or precision control. Representative work is OAG (KDD 2019) [17].
 
@@ -65,3 +65,4 @@ The second track is to train two single networks seperately, then use the pre-al
 17. https://www.aminer.cn/oag2019
 18. https://github.com/zhichun
 19. Xu K, Wang L, Yu M, et al. Cross-lingual Knowledge Graph Alignment via Graph Matching Neural Network[J]. arXiv preprint arXiv:1905.11605, 2019.
+20. Zhang Q, Sun Z, Hu W, et al. Multi-view Knowledge Graph Embedding for Entity Alignment[J]. arXiv preprint arXiv:1906.02390, 2019.
