@@ -2,13 +2,13 @@
 image: /assets/img/blog/self.jpg
 ---
 
-# About
+# About Me
 
 I am an undergraduate student in Beijing Normal University. I will be a Master student in Tsinghua University in September, 2019, advised by professor [Jie Tang](http://keg.cs.tsinghua.edu.cn/jietang/).
 
 ## Experiences
 
-* Intern at [STTC](https://www.italents.cn/) of [Ministry of Science and Technology](http://www.most.gov.cn/). **Mar. 2018 - now**
+* Intern engineer at [STTC](https://www.italents.cn/) of [Ministry of Science and Technology](http://www.most.gov.cn/). **Mar. 2018 - now**
 * Publication(s) at THU
     * Oops... Still working hard to fill here
 * Visiting Student at [KEG](http://keg.cs.tsinghua.edu.cn/) of Tsinghua University, advised by Peng Zhang and Jie Tang. **Mar. 2018 - Aug. 2019**

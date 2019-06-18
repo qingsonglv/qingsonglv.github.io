@@ -4,6 +4,8 @@ description: >
   Entity alignment (EA) aims to merge the equivalent entities given two networks, which is important to many applications. For example, cross-platform social network (SN) user alignment can be used for user profiling and user interests mining. Another example, cross-lingual knowledge graph (KG) alignment is able to assist cross-lingual information retrieval and machine translation. This post is a brief survey of embedding-based EA methods.
 ---
 
+[Chinese Version](https://www.aminer.cn/research_report/5cecc3f41976c5c87c8bee63?download=false)
+
 There are two directions of **traditional methods**:
 
 * Entity labels, e.g. user nicknames in SNs and entity labels in KGs.
