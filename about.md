@@ -29,3 +29,7 @@ I am an undergraduate student in Beijing Normal University. I will be a Master s
 ## ~
 
 ![](/assets/img/blog/self.jpg)
+
+## Others
+
+I am cultivating some habits: [punch table](https://docs.qq.com/sheet/DUVNUVGd2Y0FodlhQ?preview_token=&coord=G3%24G3%240%240%240%240&tab=BB08J2).
