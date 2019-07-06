@@ -4,7 +4,7 @@ image: /assets/img/blog/self.jpg
 
 # About Me
 
-I am an undergraduate student in Beijing Normal University. I will be a Master student in Tsinghua University in September, 2019, advised by professor [Jie Tang](http://keg.cs.tsinghua.edu.cn/jietang/).
+I am a first year Master student in Tsinghua University advised by professor [Jie Tang](http://keg.cs.tsinghua.edu.cn/jietang/). For work, I enjoy tackling with the hardest things. For life, I am trying to explore new possibilities.
 
 ## Experiences
 
