@@ -1,7 +1,3 @@
----
-image: /assets/img/blog/self.jpg
----
-
 # About Me
 
 I am a first year Master student in Tsinghua University advised by professor [Jie Tang](http://keg.cs.tsinghua.edu.cn/jietang/).
@@ -27,7 +23,3 @@ I am not a person who cares about how others see me. I just want to be myself.
 * Beijing Excellent Graduate (bachelor degree in [BNU cist](http://cisten.bnu.edu.cn/)) **May 2019**
 * National Scholarship **Oct. 2018**
 * National Scholarship **Oct. 2017**
-
-## ~
-
-![](/assets/img/blog/self.jpg)
