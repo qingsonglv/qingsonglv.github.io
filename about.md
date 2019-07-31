@@ -1,8 +1,8 @@
 # About Me
 
 I am a first year Master student in Tsinghua University advised by professor [Jie Tang](http://keg.cs.tsinghua.edu.cn/jietang/).
- 
-I am not a person who cares about how others see me. I just want to be myself.
+
+My dream is to be a machine learning engineer or researcher. There is still a long way to go.
 
 ## Experiences
 
