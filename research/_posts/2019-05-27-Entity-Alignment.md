@@ -4,7 +4,7 @@ description: >
   Entity alignment (EA) aims to merge the equivalent entities given two networks, which is important to many applications. For example, cross-platform social network (SN) user alignment can be used for user profiling and user interests mining. Another example, cross-lingual knowledge graph (KG) alignment is able to assist cross-lingual information retrieval and machine translation. This post is a brief survey of embedding-based EA methods.
 ---
 
-[Chinese Version](https://www.aminer.cn/research_report/5cecc3f41976c5c87c8bee63?download=false)
+[Chinese Version](https://www.aminer.cn/research_report/5cecc3f41976c5c87c8bee63?download=false) (Since it is out of my control, it is out-dated compared with this post.)
 
 There are two directions of **traditional methods**:
 
@@ -35,16 +35,25 @@ The second track is to train two single networks seperately, then use the pre-al
 **After that**, there are two directions to tune alignment precision.
 
 * **Iterative alignment**. Intuitively, newly aligned entities can furthor promote more aligned entities. Therefore, this is naturally iterative procedure. IPTransE (IJCAI 2017) [6] is the first research to propose this idea. However, error propogation is a problem of iterative alignment. BootEA (IJCAI 2018) [7] alleviate this problem by a seed editing method, which means newly aligned entities can also be edited or removed.
-* **Attribute information**. Sometimes, only using structure information of network is not promising in EA, so combination with attribute information is also an important area. The representative works are JAPE (ISWC 2017) [8], KDCoE (IJCAI 2018) [9] and GCN-Align (EMNLP 2018) [10] in KG domain, and REGAL (CIKM 2018) [11] and MEgo2Vec (CIKM 2018) [12] in SN domain.
+* **Attribute information**. Sometimes, only using structure information of network is not promising in EA, so combination with attribute information is also an important area. The representative works are JAPE (ISWC 2017) [8], KDCoE (IJCAI 2018) [9] and GCN-Align (EMNLP 2018) [10] in KG domain, and REGAL (CIKM 2018) [11] and MEgo2Vec (CIKM 2018) [12] in SN domain. By the way, my bachelor degree research HIN-Align [21] shows that GCN-Align is also adaptive to SN domain.
 
 **More recently**, alignment methods went through explosive grouth in 2019. Four fancy new directions are proposed:
 
 * Firstly, **unsupervised alignment**. The prerequisite of pre-aligned entities is hard to satisfy in real world scenario, so researchers are exploring how to get alignment seeds from scratch. Two representative works are as follows:
     * Entity Alignment between Knowledge Graphs Using Attribute Embeddings (AAAI 2019) [13]
     * Deep Adversarial Network Alignment (arxiv 2019) [14]
-* Secondly, **multi-view alignment**. Due to the complexity of alignment problem, embedding with one model (or view) is not enough to obtain promising result. MOANA (WWW 2019) [15] proposes a multi-level embedding model to embed information from multi-view. Moreover, they reduce the time complexity of seed excavation to linear. ACL 2019 also has a publication [19] aiming at aligning entities from the perspective of attribute, local strucutre and global structure. MultiKE (IJCAI 2019) [20] tried more views and more combination methods, and got higher hits score.
+* Secondly, **multi-view alignment**. Due to the complexity of alignment problem, embedding with one model (or view) is not enough to obtain promising result. MOANA (WWW 2019) [15] proposes a multi-level embedding model to embed information from multi-view. Moreover, they reduce the time complexity of seed excavation to linear. MuGNN (ACM 2019) [22] uses multi-channel GNN, which is also a kind of multi-view. GMNN (ACL 2019) [19] aims at aligning entities from the perspective of attribute, local strucutre and global structure. MultiKE (IJCAI 2019) [20] tried more views and more combination methods, and got higher hits score.
 * The third one is a very hard-core direction, **modify embedding model to improve alignment**, which means the improvement is on a low level. SEA (WWW 2019) [16] is such a work. They point out that the existing embedding models usually make nodes with similar degree close, which is not good for alignment. And they propose an adversarial method to mitigate this drawback.
 * Last, **web-scale alignment**. Most existing works test models on datasets with only millions of entities. However, when aligning billions of nodes, brand new problems come up from time complexity or precision control. Representative work is OAG (KDD 2019) [17].
+
+For the last part of this article, I would like to share some of my thoughts.
+
+First, about the directions that are not excavated so far in entity alignment.
+
+* **An integrated alignment system.** Things are getting more and more complicated in alignment problem. For one thing, more techniques are proposed such as iterative procedure, multi-view ensembling, etc. For another, more and more datasets are constructed. Tens of experiments are needed to publish a paper for EA. We need an integrated alignment system or framework to tackle with these difficulties.
+* **Online alignment.** Static graph alignment is not that practical in real world scenario. However, there is no work yet exploring this online alignment field, that performs alignment in an incremental way.
+
+Second, intuition about multi-view alignment. I think the reason why multi-view alignment works, is that different models tend to make the same positive entity pairs close, but different negative entity pairs far. After combining these models, negative pairs will be further, even if they are close in one or two models before combining. I think this multi-view idea is the key to an integrated alignment system and online alignment.
 
 ## References
 
@@ -68,3 +77,5 @@ The second track is to train two single networks seperately, then use the pre-al
 18. https://github.com/zhichun
 19. Xu K, Wang L, Yu M, et al. Cross-lingual Knowledge Graph Alignment via Graph Matching Neural Network[J]. arXiv preprint arXiv:1905.11605, 2019.
 20. Zhang Q, Sun Z, Hu W, et al. Multi-view Knowledge Graph Embedding for Entity Alignment[J]. arXiv preprint arXiv:1906.02390, 2019.
+21. https://github.com/1049451037/HIN-Align
+22. Cao Y, Liu Z, Li C, et al. Multi-Channel Graph Neural Network for Entity Alignment[C]//Proceedings of the 57th Conference of the Association for Computational Linguistics. 2019: 1452-1461.
