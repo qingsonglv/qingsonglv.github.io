@@ -23,3 +23,7 @@ My dream is to be a machine learning engineer or researcher. There is still a lo
 * Beijing Excellent Graduate (bachelor degree in [BNU cist](http://cisten.bnu.edu.cn/)) **May 2019**
 * National Scholarship **Oct. 2018**
 * National Scholarship **Oct. 2017**
+
+<div align="center">
+![visit count](https://www.simple-counter.com/hit.php?id=zeendac&nd=9&nc=4&bc=1")
+</div>
