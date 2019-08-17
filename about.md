@@ -25,5 +25,5 @@ My dream is to be a machine learning engineer or researcher. There is still a lo
 * National Scholarship **Oct. 2017**
 
 <div align="center">
-![visit count](https://www.simple-counter.com/hit.php?id=zeendac&nd=9&nc=4&bc=1)
+<img src="https://www.simple-counter.com/hit.php?id=zeendac&nd=9&nc=4&bc=1"/>
 </div>
